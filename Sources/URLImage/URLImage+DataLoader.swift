@@ -20,7 +20,7 @@ public extension URLImage {
 }
 
 public extension URLImage.DataLoader {
-    func load() {
+    func download() {
         guard let url = url else {
             return
         }

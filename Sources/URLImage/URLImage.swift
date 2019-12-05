@@ -41,7 +41,7 @@ public struct URLImage: View {
             return placeholder
                 .resizable()
                 .aspectRatio(contentMode: contentMode)
-                .onAppear(perform: dataLoader.load)
+                .onAppear(perform: dataLoader.download)
                 .onDisappear(perform: dataLoader.cancel)
         }
     }
